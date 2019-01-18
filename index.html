@@ -2,568 +2,73 @@
 <html lang="en">
 
 <head>
-	<title> CV Của Tôi </title>
+	<title> Example </title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
 	<link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
-	<link rel="stylesheet" type="text/css" href="css/style.css">
-	<link rel="stylesheet" type="text/css" href="vendor/animation/animate.css">
+	<link rel="stylesheet" type="text/css" href="./sass/style.css">
 
+
+	<script src="./vendor/font-awesome/js/fontawesome-all.min.js"></script>
+	<script src="./vendor/jquery/jquery-3.3.1.min.js"></script>
+	<script src="./vendor/jquery/popper.min.js"></script>
+	<script src="./vendor/bootstrap/js/bootstrap.min.js"></script>
+	<script src="./vendor/animation/SplitText.min.js"></script>
+	<script src="./vendor/animation/TweenMax.min.js"></script>
+	<script src="./js/main.js"></script>
 </head>
 
 <body>
-	<div id="fb-root"></div>
-	<script>
-		(function (d, s, id) {
-			var js, fjs = d.getElementsByTagName(s)[0];
-			if (d.getElementById(id)) return;
-			js = d.createElement(s);
-			js.id = id;
-			js.src = 'https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v3.1&appId=455654441583909&autoLogAppEvents=1';
-			fjs.parentNode.insertBefore(js, fjs);
-		}(document, 'script', 'facebook-jssdk'));
-	</script>
 
-	<script src='https://www.google.com/recaptcha/api.js'></script>
-
-
-
-	<div class="preloader-wrap">
-		<div class="percentage" id="precent"></div>
-		<div class="loader">
-			<div class="trackbar">
-				<div class="loadbar"></div>
-			</div>
-			<div class="glow"></div>
-		</div>
-	</div>
-
-	<!-- MENU -->
-	<nav id="menu" class="navbar navbar-expand-md fixed-top w-100 p-4 px-sm-0">
+	<nav id="menu" class="navbar navbar-expand-md navbar-dark fixed-top">
 		<div class="container">
-			<a class="navbar-brand" href="#">MR LONG</a>
-			<button id="btn-menu" class="navbar-toggler hidden-lg-up" type="button" data-toggle="collapse">
-				<span></span>
-				<span></span>
-				<span></span>
-				<span></span>
-			</button>
-			<div id="menu-list1" class="collapse navbar-collapse">
+			<a class="navbar-brand" href="#">&ltCoder/&gt</a>
+			<button class="navbar-toggler hidden-lg-up" type="button" data-toggle="collapse" data-target="#collapsibleNavId1" aria-controls="collapsibleNavId1"
+				aria-expanded="false" aria-label="Toggle navigation"></button>
+			<div class="collapse navbar-collapse" id="collapsibleNavId1">
 				<ul class="navbar-nav ml-auto mt-2 mt-lg-0">
 					<li class="nav-item active">
-						<a class="nav-link" href="#" data-id="#home">Trang chủ</a>
+						<a class="nav-link" href="#">Home</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" href="#" data-id="#about">Về Tôi</a>
+						<a class="nav-link" href="#">About</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" href="#" data-id="#skill">Kỹ Năng</a>
+						<a class="nav-link" href="#">Contact</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" href="#" data-id="#portfolio">Đã làm</a>
+						<a class="nav-link" href="#">Comment</a>
 					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="#" data-id="#contact">Liên hệ</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="#" data-id="#comment">Bình Phẩm</a>
-					</li>
-
 				</ul>
 			</div>
 		</div>
 	</nav>
-
-	<!-- MENU THA XUONG -->
-	<div id="menu-list2" class="navbar-collapse">
-		<ul class="navbar-nav">
-			<li class="nav-item active">
-				<a class="nav-link" href="#" data-id="#home">Trang chủ</a>
-			</li>
-			<li class="nav-item">
-				<a class="nav-link" href="#" data-id="#about">Về Tôi</a>
-
-			</li>
-			<li class="nav-item">
-				<a class="nav-link" href="#" data-id="#skill">Kỹ Năng</a>
-			</li>
-			<li class="nav-item">
-				<a class="nav-link" href="#" data-id="#portfolio">Đã làm</a>
-			</li>
-			<li class="nav-item">
-				<a class="nav-link" href="#" data-id="#contact">Liên hệ</a>
-			</li>
-			<li class="nav-item">
-				<a class="nav-link" href="#" data-id="#comment">Bình Phẩm</a>
-			</li>
-		</ul>
-	</div>
-	<!-- HET MENU THA XUONG -->
-
-	<!-- END MENU -->
-
-	<!-- HEADER -->
-	<header>
-		<div class="inner">
+	<div class="wrapper">
+		<div class="slider">
 			<div class="content">
-				<h1>Chào Bạn</h1>
-				<span id="text-run"></span>
-				<div class="list-icon">
-					<a href="https://www.facebook.com/thanhlong9817" data-toggle="tooltip" data-placement="left" title="Facebook">
-						<i class="fab fa-facebook-f"></i>
-					</a>
-					<a href="#" data-toggle="tooltip" data-placement="bottom" title="Twitter">
-						<i class="fab fa-twitter"></i>
-					</a>
-					<a href="#" data-toggle="tooltip" data-placement="bottom" title="Google Plus">
-						<i class="fab fa-google-plus-g"></i>
-					</a>
-					<a href="#" data-toggle="tooltip" data-placement="right" title="Instagram">
-						<i class="fab fa-instagram"></i>
-					</a>
+				<div id="home" class="slide active">
+					<div class="bg"></div>
+					<div class="content">
+						<h2 id="hiThere">Hi there</h2>
+						<span id="star">
+							<div class="before"></div>
+							<i class="fa fa-star"></i>
+							<div class="after"></div>
+						</span>
+						<div id="typed">
+							<p>Welcome To My Website</p>
+							<p>I'm Thành Long</p>
+							<p>I'm a Student</p>
+						</div>
+					</div>
 				</div>
+				<div id="about" class="slide"></div>
+				<div id="contact" class="slide"></div>
 			</div>
 		</div>
-	</header>
-	<!-- END HEADER -->
-
-	<!-- MAIN -->
-	<main>
-		<!-- ABOUT -->
-		<div id="about" class="section">
-			<div class="container">
-				<!-- HEADLINE -->
-				<div class="headline">
-					<div class="inner">
-						<div class=" content">
-							<p>Thông Tin</p>
-							<h3>Cá Nhân</h3>
-						</div>
-					</div>
-				</div>
-				<!-- END HEADLINE -->
-
-				<!-- CONTENT -->
-				<div id="ab-content">
-					<div class="row">
-						<div class="wow fadeInLeft col-lg-7 trai">
-							<div class="row">
-								<div class="col-sm-5 px-4 px-sm-2 ">
-									<img id="ab-img" src="./images/face-id.jpg" alt="#">
-								</div>
-								<div class="col-sm-7 px-4 px-sm-2 py-4 py-sm-2 py-md-1">
-									<h2 class="text-uppercase">Đây là tôi</h2>
-									<hr>
-									<ul class="ab-info clearfix">
-										<li>
-											<strong>Tên</strong>
-											<span> Nguyễn Thành Long</span>
-										</li>
-
-										<li>
-											<strong>Tuổi</strong>
-											<span>20</span>
-										</li>
-										<li>
-											<strong>Giới Tính</strong>
-											<span>Nam</span>
-										</li>
-										<li>
-											<strong>Ngày Sinh</strong>
-											<span>2/8/1998</span>
-										</li>
-										<li>
-											<strong>Địa chỉ</strong>
-											<span>02 Nguyễn Đình Chiểu Nha Trang Khánh Hòa</span>
-										</li>
-										<li>
-											<strong>Số điện thoại</strong>
-											<span>0932019349</span>
-										</li>
-										<li>
-											<strong>email</strong>
-											<span>thanhlong98kun@gmail.com</span>
-										</li>
-										<li>
-											<strong>Công việc hiện tại</strong>
-											<span>Đang là sinh viên năm 3 đại học Nha Trang</span>
-										</li>
-									</ul>
-								</div>
-							</div>
-						</div>
-						<div class="wow fadeInRight col-lg-5 phai px-4 px-sm-0 py-md-1">
-							<h2 class="text-uppercase">Mục tiêu ngắn hạn của tôi</h2>
-							<hr>
-							<ul class="term-goals pl-4">
-								<!-- <li>Tiềm kiếm </li> -->
-								<li>Hoàn thiện kỹ năng thiết kế web của tôi về phần giao diện</li>
-								<li>Toeic 600</li>
-								<li>Học tiếp Javascript, Nodejs</li>
-								<li>Xây dựng một Website cá nhân</li>
-							</ul>
-							<h2 class="text-uppercase">Mục tiêu dài hạn</h2>
-							<hr>
-							<ul class="term-goals pl-4">
-								<li>Back-End (NodeJS, C#, SQL,...)</li>
-								<li>Team leader</li>
-							</ul>
-						</div>
-					</div>
-				</div>
-				<!-- END CONTENT -->
-			</div>
-		</div>
-		<!-- END ABOUT -->
-
-		<div id="skill" class="section">
-			<div class="container">
-				<!-- HEADLINE -->
-				<div class="headline">
-					<div class="inner">
-						<div class=" content">
-							<p>Đánh giá</p>
-							<h3>kỹ năng & Kiến thức</h3>
-						</div>
-					</div>
-				</div>
-				<!-- END HEADLINE -->
-
-				<!-- Content -->
-				<div id="sk-content">
-					<div class="row">
-						<div class="trai col-md-7">
-
-							<h2 class="wow bounceInLeft text-uppercase">CODE</h2>
-							<ul class="skill-list">
-								<!-- 1 SKILL -->
-								<li class="progress-wrapper">
-									<div class="progress" aria-valuenow="70">
-										<div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar"></div>
-										<div class="progress-tooltip">0%</div>
-									</div>
-									<p>HTMl</p>
-								</li>
-								<!-- HET 1 SKILL -->
-
-								<!-- 1 SKILL -->
-								<li class="progress-wrapper">
-									<div class="progress" aria-valuenow="50">
-										<div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar"></div>
-										<div class="progress-tooltip">0%</div>
-									</div>
-									<p>css</p>
-								</li>
-								<!-- HET 1 SKILL -->
-
-								<!-- 1 SKILL -->
-								<li class="progress-wrapper">
-									<div class="progress" aria-valuenow="50">
-										<div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar"></div>
-										<div class="progress-tooltip">0%</div>
-									</div>
-									<p>scss</p>
-								</li>
-								<!-- HET 1 SKILL -->
-
-								<!-- 1 SKILL -->
-								<li class="progress-wrapper">
-									<div class="progress" aria-valuenow="35">
-										<div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar"></div>
-										<div class="progress-tooltip">0%</div>
-									</div>
-									<p>javascript</p>
-								</li>
-								<!-- HET 1 SKILL -->
-
-								<!-- 1 SKILL -->
-								<li class="progress-wrapper">
-									<div class="progress" aria-valuenow="70">
-										<div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar"></div>
-										<div class="progress-tooltip">0%</div>
-									</div>
-									<p>Bootstrap</p>
-								</li>
-								<!-- HET 1 SKILL -->
-
-								<!-- 1 SKILL -->
-								<li class="progress-wrapper">
-									<div class="progress" aria-valuenow="30">
-										<div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar"></div>
-										<div class="progress-tooltip">0%</div>
-									</div>
-									<p>jquery</p>
-								</li>
-								<!-- HET 1 SKILL -->
-
-								<!-- 1 SKILL -->
-								<li class="progress-wrapper">
-									<div class="progress" aria-valuenow="6">
-										<div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar"></div>
-										<div class="progress-tooltip">0%</div>
-									</div>
-									<p>Nodejs (Express)</p>
-								</li>
-								<!-- HET 1 SKILL -->
-
-							</ul>
-
-						</div>
-						<!-- Het col-md-7	 -->
-						<div class="col-md-5">
-							<h2 class="wow bounceInRight text-uppercase">design</h2>
-							<ul class="skill-list">
-								<!-- 1 SKILL -->
-								<li class="progress-wrapper">
-									<div class="progress" aria-valuenow="10">
-										<div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar"></div>
-										<div class="progress-tooltip">0%</div>
-									</div>
-									<p>photoshop</p>
-								</li>
-								<!-- HET 1 SKILL -->
-								<!-- 1 SKILL -->
-								<li class="progress-wrapper">
-									<div class="progress" aria-valuenow="15">
-										<div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar"></div>
-										<div class="progress-tooltip">0%</div>
-									</div>
-									<p>illustrator</p>
-								</li>
-								<!-- HET 1 SKILL -->
-
-							</ul>
-						</div>
-
-					</div>
-					<div class="row justify-content-center mt-4">
-						<div id="momu" class="wow zoomInUp col-md-6 mx-0 shadow px-5 py-4">
-							<h2 class="text-center">Hiện tại tôi có thể làm</h2>
-							<ul class="term-goals">
-								<li>Cắt Web</li>
-								<li>Một ít về phần backend</li>
-							</ul>
-							<hr>
-							<h2 class="text-center">Mong muốn được làm</h2>
-							<ul class="term-goals">
-								<li>Giao diện web năng cao như Web app</li>
-								<li>Back-End</li>
-							</ul>
-						</div>
-					</div>
-				</div>
-				<!-- End Content -->
-
-			</div>
-		</div>
-		<!-- HET SKILL -->
-
-		<!-- PORTFOLIO -->
-		<div id="portfolio" class="section">
-			<div class="container">
-				<!-- HEADLINE -->
-				<div class="headline">
-					<div class="inner">
-						<div class=" content">
-							<p>Sản phẩm</p>
-							<h3>Tôi đã làm</h3>
-						</div>
-					</div>
-				</div>
-				<!-- END HEADLINE -->
-
-				<div id="pf-content">
-					<!-- BUTTON -->
-					<ul id="btn-pf" class="btn-group shadow-lg">
-						<li class="btn btn-outline-dark" data-filter="*">All</li>
-						<li class="btn btn-outline-dark" data-filter=".web">Web</li>
-						<li class="btn btn-outline-dark" data-filter=".design">Design</li>
-						<li class="btn btn-outline-dark" data-filter=".photo">Photo</li>
-					</ul>
-					<!-- END BUTTON -->
-
-					<p class="h4 text-uppercase my-4 text-danger">
-						<i class="fas fa-exclamation-circle mr-2"></i>Tôi vẫn chưa có sản phẩm nào hoàn thành tốt để đưa lên đây, nhưng nếu có thì nó sẽ xuất hiện ở đây</p>
-
-					<!-- LIST -->
-					<div id="pf-list-item">
-						<div class=" card bg-dark text-white web" data-wow-delay="0.1s">
-							<img class="card-img shadow-sm" src="./images/four1.jpg" alt="Card image">
-							<div class="card-img-overlay">
-								<h5 class="card-title">demo</h5>
-								<p class="card-text">This is a demo
-								</p>
-							</div>
-						</div>
-						<div class=" card bg-dark text-white design" data-wow-delay="0.3s">
-							<img class="card-img shadow-sm" src="./images/four1.jpg" alt="Card image">
-							<div class="card-img-overlay">
-								<h5 class="card-title">demo</h5>
-								<p class="card-text">This is a demo
-								</p>
-							</div>
-						</div>
-						<div class=" card bg-dark text-white web" data-wow-delay="0.5s">
-							<img class="card-img shadow-sm" src="./images/four1.jpg" alt="Card image">
-							<div class="card-img-overlay">
-								<h5 class="card-title">demo</h5>
-								<p class="card-text">This is a demo
-								</p>
-							</div>
-						</div>
-						<div class=" card bg-dark text-white photo" data-wow-delay="0.7s">
-							<img class="card-img shadow-sm" src="./images/four1.jpg" alt="Card image">
-							<div class="card-img-overlay">
-								<h5 class="card-title">demo</h5>
-								<p class="card-text">This is a demo
-								</p>
-							</div>
-						</div>
-						<div class=" card bg-dark text-white photo web" data-wow-delay="0.9s">
-							<img class="card-img shadow-sm" src="./images/four1.jpg" alt="Card image">
-							<div class="card-img-overlay">
-								<h5 class="card-title">demo</h5>
-								<p class="card-text">This is a demo
-								</p>
-							</div>
-						</div>
-						<div class=" card bg-dark text-white design photo" data-wow-delay="1.1s">
-							<img class="card-img shadow-sm" src="./images/four1.jpg" alt="Card image">
-							<div class="card-img-overlay">
-								<h5 class="card-title">demo</h5>
-								<p class="card-text">This is a demo
-								</p>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-		<!-- END PORTFOLIO -->
-
-		<div id="contact" class="section">
-			<div class="container">
-				<!-- HEADLINE -->
-				<div class="headline">
-					<div class="inner">
-						<div class=" content">
-							<p></p>
-							<h3>Liên hệ</h3>
-						</div>
-					</div>
-				</div>
-				<!-- END HEADLINE -->
-				<div id="ct-content">
-					<!-- ROW -->
-					<div class="row">
-						<div class="wow slideInLeft col-md-5">
-							<div id="ct" class="shadow rounded">
-								<p class="h2 text-uppercase text-center mb-4">Thông tin liên hệ tôi</p>
-								<ul class="ab-info clearfix">
-									<li>
-										<strong>email</strong>
-										<span>thanhlong98kun@gmail.com</span>
-									</li>
-									<li>
-										<strong>Địa chỉ</strong>
-										<span>02 Nguyễn Đình Chiểu Nha Trang Khánh Hòa</span>
-									</li>
-									<li>
-										<strong>Số điên thoại</strong>
-										<span>0932019349</span>
-									</li>
-								</ul>
-								<div class="list-icon">
-									<a href="https://www.facebook.com/thanhlong9817" data-toggle="tooltip" data-placement="left" title="Facebook">
-										<i class="fab fa-facebook-f"></i>
-									</a>
-									<a href="#" data-toggle="tooltip" data-placement="bottom" title="Twitter">
-										<i class="fab fa-twitter"></i>
-									</a>
-									<a href="#" data-toggle="tooltip" data-placement="bottom" title="Google Plus">
-										<i class="fab fa-google-plus-g"></i>
-									</a>
-									<a href="#" data-toggle="tooltip" data-placement="right" title="Instagram">
-										<i class="fab fa-instagram"></i>
-									</a>
-								</div>
-								<div id="mapGoogle">
-									<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4037.722562011682!2d109.19822638084797!3d12.267699425620911!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x317067ed3a052f11%3A0xd464ee0a6e53e8b7!2zVHLGsOG7nW5nIMSQ4bqhaSBo4buNYyBOaGEgVHJhbmc!5e0!3m2!1svi!2s!4v1534143665408"
-									    width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen></iframe>
-								</div>
-							</div>
-						</div>
-						<div class="wow slideInRight col-md-7">
-							<form id="ct-form" class="shadow rounded">
-								<p class="h2 text-center text-uppercase mb-4">Liên hệ bằng form</p>
-								<p class="text-center text-danger">Hiện tại form chưa gửi được, bạn có thể gửi bình luận bên dưới</p>
-								<div class="form-group row">
-									<label for="inputName" class="col-sm-3 col-form-label">Tên của bạn</label>
-									<div class="col-sm-9">
-										<input type="text" class="form-control" name="ct-name" id="inputName" placeholder="Your Name" required>
-									</div>
-								</div>
-								<div class="form-group row">
-									<label for="inputEmail3" class="col-sm-3 col-form-label">Email</label>
-									<div class="col-sm-9">
-										<input type="email" class="form-control" name="ct-email" id="inputEmail3" placeholder="Email" required>
-									</div>
-								</div>
-								<div class="form-group row">
-									<label for="inputSubject" class="col-sm-3 col-form-label">Mô tả</label>
-									<div class="col-sm-9">
-										<input type="text" class="form-control" name="ct-subject" id="inputSubject" placeholder="Subject" required>
-									</div>
-								</div>
-								<div class="form-group row">
-									<label for="messenge" class="col-sm-3">Lời nhắn</label>
-									<div class="col-sm-9">
-										<textarea class="form-control" id="messenge" rows="8" required></textarea>
-									</div>
-								</div>
-								<div class="row pr-3">
-									<div class="col-sm-3"></div>
-									<div class="col-sm-9">
-										<div class="g-recaptcha" data-sitekey="<?php echo $site_key ?>"></div>
-										<button type="submit" name="submit" class=" btn btn-primary mb-2">Gửi</button>
-									</div>
-								</div>
-							</form>
-
-						</div>
-
-					</div>
-					<!-- HET ROW -->
-					<div id="comment" class="row mt-5">
-						<div id="fb-comment" class="col-12 col-sm-8 w-100 mx-auto">
-							<p class=" h2 text-left text-uppercase mb-4 text-center">Bình luận</p>
-							<p class="wow zoomIn text-center" data-wow-delay="0.5s"> (Đánh giá hoặc góp ý về bản cv của tôi bên dưới nhé)</p>
-							<div class="fb-comments" data-href="https://thanhlong98kun.github.io/" data-width="100%" data-numposts="5"></div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-
-
-	</main>
-	<!-- END MAIN -->
-
-	<script src="vendor/jquery/jquery-3.3.1.min.js"></script>
-	<script src="vendor/jquery/popper.min.js"></script>
-	<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
-	<script src="vendor/font-awesome/js/fontawesome-all.min.js"></script>
-	<script src="./vendor/animation/TweenMax.js"></script>
-	<script src="vendor/animation/ScrollToPlugin.min.js"></script>
-	<script src="./vendor/animation/typed.min.js"></script>
-	<script src="vendor/animation/isotope.pkgd.min.js"></script>
-	<script src="vendor/animation/wow.min.js"></script>
-	<script>
-		new WOW().init();
-	</script>
-
-	<script src="js/main.js"></script>
+	</div>
+	<!-- HET WRAPPER -->
 </body>
 
 </html>
